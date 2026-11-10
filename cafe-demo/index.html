@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kafa, doručak i mirni trenuci u kafiću Jutro. Pronađi nas u Sarajevu.">
+  <title>Jutro — kafa koja uspori dan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#pocetna" aria-label="Jutro kafić, početna"><span class="logo-icon">j.</span><span>JUTRO<small>KAFA · DORUČAK · DOBAR DAN</small></span></a>
+    <button class="menu-button" aria-label="Otvori meni" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <nav id="nav" class="nav"><a href="#meni">Meni</a><a href="#nas">Naša priča</a><a href="#posjeti">Gdje smo</a><a class="button button-light nav-reserve" href="#rezervacija">Rezerviši sto</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="pocetna">
+      <div class="hero-bg" role="img" aria-label="Topao enterijer kafića uz jutarnju kafu"></div>
+      <div class="hero-copy"><p class="kicker"><span></span> DOBRO JUTRO, SARAJEVO</p><h1>Dan počinje<br>ovdje. <em>Polako.</em></h1><p class="hero-text">Miris svježe kafe, doručak bez žurbe i mjesto koje ti uvijek čuva omiljeni kutak.</p><div class="hero-buttons"><a class="button button-light" href="#meni">Pogledaj meni <span>↗</span></a><a class="under-link" href="#nas">Upoznaj Jutro <span>↓</span></a></div><div class="open-note"><span class="open-dot"></span> Otvoreni smo danas <b>08:00–18:00</b></div></div>
+      <div class="hero-caption">DOBRA KAFA. JOŠ BOLJE DRUŠTVO.</div>
+    </section>
+    <section class="welcome section" id="nas"><p class="kicker">MALO MJESTO ZA LIJEPE PAUZE</p><h2>Uvijek ima vremena<br>za <em>još jednu kafu.</em></h2><p>Jutro je kvartovski kafić stvoren za spora jutra, kratke pauze i duge razgovore. Biramo kvalitetna zrna, pripremamo doručak od svježih namirnica i vjerujemo da se najbolji dani ne moraju planirati.</p><a class="under-link dark-link" href="#posjeti">Svrati do nas <span>↗</span></a></section>
+    <section class="menu-section section" id="meni"><div class="section-top"><div><p class="kicker">NEŠTO FINO ZA SVAKI DIO DANA</p><h2>Naši favoriti</h2></div><span class="menu-note">Meni se mijenja sezonski<br>i uvijek ima nešto novo.</span></div><div class="menu-grid">
+      <article class="menu-item"><div class="menu-image coffee-img" role="img" aria-label="Cappuccino s latte artom"></div><div class="menu-title"><h3>Jutarnji cappuccino</h3><b>4.50 KM</b></div><p>Espresso, svilenkasto mlijeko, mirno jutro.</p><span class="tag">GOSTIMA OMILJEN</span></article>
+      <article class="menu-item"><div class="menu-image toast-img" role="img" aria-label="Doručak s tostom i avokadom"></div><div class="menu-title"><h3>Avokado tost</h3><b>9.50 KM</b></div><p>Hrskavi hljeb, avokado, jaje i sezonsko začinsko bilje.</p><span class="tag">DORUČAK</span></article>
+      <article class="menu-item"><div class="menu-image pastry-img" role="img" aria-label="Svježe pecivo i kafa"></div><div class="menu-title"><h3>Kroasan dana</h3><b>4.00 KM</b></div><p>Svježe pečen, puterast i odličan uz espresso.</p><span class="tag">SVAKO JUTRO</span></article>
+    </div><p class="menu-disclaimer">Demo meni i cijene služe kao primjer.</p></section>
+    <section class="feature"><div class="feature-image" role="img" aria-label="Sunčeva svjetlost u ugodnom kafiću"></div><div class="feature-copy"><p class="kicker">TVOJ KVARTOVSKI DNEVNI BORAVAK</p><h2>Uđi na pet minuta.<br><em>Ostani koliko želiš.</em></h2><p>Za kafu za ponijeti, doručak s prijateljima ili trenutak mira između obaveza — uvijek si dobrodošao/la.</p><a class="button button-dark" href="#rezervacija">Sačuvaj svoj sto <span>↗</span></a></div></section>
+    <section class="visit section" id="posjeti"><div class="visit-heading"><p class="kicker">ČEKAMO TE</p><h2>Pronađi nas</h2></div><div class="visit-grid"><div><span class="visit-label">ADRESA</span><p>Radićeva 12<br>71000 Sarajevo, BiH</p><a class="under-link dark-link" href="https://maps.google.com/?q=Radi%C4%87eva+12+Sarajevo" target="_blank" rel="noreferrer">Otvori mapu ↗</a></div><div><span class="visit-label">RADNO VRIJEME</span><p>Ponedjeljak – petak <b>08:00 – 18:00</b><br>Subota – nedjelja <b>09:00 – 16:00</b></p></div><div><span class="visit-label">REZERVACIJE</span><p><a href="tel:+38761123456">+387 61 123 456</a><br><a href="mailto:hej@jutrokafe.ba">hej@jutrokafe.ba</a></p></div></div></section>
+    <section class="reservation" id="rezervacija"><div class="reservation-copy"><p class="kicker">PLANIRAŠ DRUŽENJE?</p><h2>Čuvamo ti<br><em>dobar kutak.</em></h2><p>Pošalji nam upit za sto. Javićemo ti se da potvrdimo rezervaciju.</p></div><form id="reservation-form" class="reservation-form"><label for="guest-name">Ime</label><input id="guest-name" name="name" type="text" placeholder="Tvoje ime" required><div class="form-row"><div><label for="guest-count">Broj osoba</label><select id="guest-count" name="guests" required><option value="" disabled selected>Odaberi</option><option>1–2 osobe</option><option>3–4 osobe</option><option>5–6 osoba</option></select></div><div><label for="visit-date">Datum</label><input id="visit-date" name="date" type="date" required></div></div><button class="button button-light submit-button" type="submit">Pošalji upit <span>↗</span></button><p class="form-message" id="form-message" aria-live="polite">Demo forma — podaci se ne šalju kafiću.</p></form></section>
+  </main>
+  <footer class="footer"><a class="logo footer-logo" href="#pocetna"><span class="logo-icon">j.</span><span>JUTRO<small>KAFA · DORUČAK · DOBAR DAN</small></span></a><p>Vidimo se uz kafu. ☕</p><div class="footer-bottom"><span>© 2026 Jutro Kafić · Demo koncept</span><div><a href="#meni">Meni</a><a href="#posjeti">Kontakt</a><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div></footer>
+</body>
+</html>
+
