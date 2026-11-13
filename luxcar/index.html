@@ -1,0 +1,341 @@
+<!doctype html>
+  <html lang="bs">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>LUXCAR Gradiška | Prodaja polovnih automobila</title>
+
+      <meta
+        name="description"
+        content="LUXCAR Gradiška – pregledajte ponudu kvalitetnih polovnih automobila. Pogledajte fotografije, cijene i detaljne specifikacije vozila."
+      />
+
+      <meta name="robots" content="index, follow" />
+      <meta name="author" content="LUXCAR" />
+      <meta name="theme-color" content="#121312" />
+
+      <!-- Open Graph -->
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="bs_BA" />
+      <meta property="og:site_name" content="LUXCAR" />
+      <meta
+        property="og:title"
+        content="LUXCAR Gradiška | Polovni automobili"
+      />
+      <meta
+        property="og:description"
+        content="Pogledajte ponudu polovnih automobila u LUXCAR salonu u Gradišci."
+      />
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
+        rel="stylesheet"
+      />
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoDealer",
+          "name": "LUXCAR",
+          "description": "Prodaja kvalitetnih polovnih automobila u Gradišci.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Put Srpske Vojske",
+            "addressLocality": "Gradiška",
+            "postalCode": "78400",
+            "addressCountry": "BA"
+          }
+        }
+      </script>
+
+      <link rel="stylesheet" href="./CSS/index.css" />
+    </head>
+
+    <body>
+      <!-- Gornja informativna traka -->
+      <section class="sekcija1">
+        <p>PAŽLJIVO ODABRANA VOZILA <span>•</span> KVALITET KOJEM VJERUJETE</p>
+      </section>
+      <!-- Navigacija -->
+      <header class="header">
+        <a href="#pocetna" class="brand">
+          <div class="logo">L</div>
+          <div class="naslov">
+            <p class="name">LUXCAR</p>
+            <p class="podnaslov">PREMIUM AUTOMOBILI</p>
+          </div>
+        </a>
+        <nav class="desktop-nav">
+          <a href="#pocetna" class="active">Početna</a>
+          <a href="#vozila">Vozila</a> <a href="#prednosti">O nama</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+        <a href="#vozila" class="header-cta"
+          >Pogledajte vozila <span>↗</span></a
+        >
+        <button
+          class="hamburger-nav"
+          id="hamburger"
+          type="button"
+          aria-label="Otvori navigaciju"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span> <span></span> <span></span>
+        </button>
+        <nav class="mobile-nav" id="mobile-nav">
+          <a href="#pocetna">Početna</a> <a href="#vozila">Vozila</a>
+          <a href="#prednosti">O nama</a> <a href="#kontakt">Kontakt</a>
+        </nav>
+      </header>
+      <main>
+        <!-- Hero sekcija -->
+        <section class="mainHeading" id="pocetna">
+          <div class="hero-content">
+            <p class="headingP">
+              <span class="gold-line"></span> VAŠ SLJEDEĆI AUTOMOBIL POČINJE
+              OVDJE
+            </p>
+            <h1>
+              Više od vožnje.<br />
+              <span class="italik">Osjećaj kvaliteta.</span>
+            </h1>
+            <div class="container-opis">
+              <p class="headingOpis">
+                Otkrijte pažljivo odabranu ponudu polovnih automobila u
+                Gradišci. Pronađite vozilo koje spaja pouzdanost, udobnost i
+                kvalitet, uz detaljne informacije i fotografije svakog
+                automobila.
+              </p>
+              <a href="#vozila" class="hero-link">
+                ISTRAŽITE KOLEKCIJU <span>↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-label">
+            <span>01</span> <span>DRIVE WITH CONFIDENCE</span>
+          </div>
+        </section>
+        <!-- Katalog vozila -->
+        <section class="main" id="vozila">
+          <div class="section-top">
+            <div>
+              <p class="goldT eyebrow">LUXCAR KOLEKCIJA</p>
+              <h2>Pronađite svoj automobil</h2>
+              <p class="section-description">
+                Istražite našu ponudu pažljivo odabranih vozila.
+              </p>
+            </div>
+            <a href="#kontakt" class="text-link">
+              Trebate pomoć? <span>↗</span>
+            </a>
+          </div>
+          <div class="catalog-info">
+            <p>
+              PRIKAZANO <strong class="broj-prikazanih">0</strong> OD
+              <strong class="ukupno-vozila">0</strong> VOZILA
+            </p>
+            <p>PREMIUM SELEKCIJA</p>
+          </div>
+          <div class="vozila-layout">
+            <!-- Filteri -->
+            <aside class="aside">
+              <form class="filter-form" id="filter-form">
+                <div class="filter-heading">
+                  <h3>Filteri</h3>
+                  <span>⌕</span>
+                </div>
+                <div class="search-group">
+                  <label for="pretraga">PRETRAGA</label>
+                  <div class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input
+                      type="search"
+                      id="pretraga"
+                      placeholder="Marka ili model..."
+                    />
+                  </div>
+                </div>
+                <div class="filter">
+                  <label for="marka">MARKA VOZILA</label>
+                  <select name="marka" id="marka">
+                    <option value="">Sve marke</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Skoda">Škoda</option>
+                    <option value="Opel">Opel</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Toyota">Toyota</option>
+                  </select>
+                </div>
+                <div class="filter">
+                  <label for="gorivo">GORIVO</label>
+                  <select name="gorivo" id="gorivo">
+                    <option value="">Sve vrste goriva</option>
+                    <option value="Dizel">Dizel</option>
+                    <option value="Benzin">Benzin</option>
+                    <option value="Hibrid">Hibrid</option>
+                    <option value="Električno">Električno</option>
+                  </select>
+                </div>
+                <div class="filter">
+                  <label for="cijena">MAKSIMALNA CIJENA</label>
+                  <select name="cijena" id="cijena">
+                    <option value="">Sve cijene</option>
+                    <option value="15000">Do 15.000 KM</option>
+                    <option value="25000">Do 25.000 KM</option>
+                    <option value="35000">Do 35.000 KM</option>
+                    <option value="50000">Do 50.000 KM</option>
+                  </select>
+                </div>
+                <div class="filter">
+                  <label for="sortiranje">SORTIRAJ PO</label>
+                  <select name="sortiranje" id="sortiranje">
+                    <option value="novo">Najnovije</option>
+                    <option value="jeftinije">Cijena: niža ka višoj</option>
+                    <option value="skuplje">Cijena: viša ka nižoj</option>
+                  </select>
+                </div>
+                <button type="submit" class="primijeni-filter">
+                  PRIMIJENI FILTERE <span>→</span>
+                </button>
+                <button type="reset" class="reset-filter">
+                  Poništi filtere
+                </button>
+              </form>
+              <div class="filter-note">
+                <span>✦</span>
+                <p>
+                  Niste pronašli odgovarajuće vozilo?
+                  <a href="#kontakt">Kontaktirajte nas.</a>
+                </p>
+              </div>
+            </aside>
+            <!-- Kartice vozila -->
+            <div class="lista-vozila">
+              <p class="no-results" id="no-results" hidden>
+                Nema vozila koja odgovaraju izabranim filterima.
+              </p>
+            </div>
+            <button id="ucitaj-jos" class="load-more-btn">
+              Učitaj još vozila
+            </button>
+          </div>
+        </section>
+        <!-- Prednosti -->
+        <section class="prednosti" id="prednosti">
+          <div class="advantages-heading">
+            <p class="eyebrow goldT">ZAŠTO LUXCAR</p>
+            <h2>Više razloga da nam vjerujete.</h2>
+          </div>
+          <article class="oznake">
+            <div class="oznaka-sekcije">
+              <span class="broj">01</span> <span class="linija"></span>
+            </div>
+            <h3>Pažljivo odabrana vozila</h3>
+            <p>
+              Svako vozilo biramo s posebnom pažnjom na kvalitet i očuvanost.
+            </p>
+          </article>
+          <article class="oznake">
+            <div class="oznaka-sekcije">
+              <span class="broj">02</span> <span class="linija"></span>
+            </div>
+            <h3>Provjerena istorija</h3>
+            <p>Transparentan pristup i jasne informacije prije vaše odluke.</p>
+          </article>
+          <article class="oznake">
+            <div class="oznaka-sekcije">
+              <span class="broj">03</span> <span class="linija"></span>
+            </div>
+            <h3>Profesionalna podrška</h3>
+            <p>
+              Pomažemo vam da pronađete automobil koji odgovara vašim potrebama.
+            </p>
+          </article>
+          <article class="oznake">
+            <div class="oznaka-sekcije">
+              <span class="broj">04</span> <span class="linija"></span>
+            </div>
+            <h3>Jednostavna kupovina</h3>
+            <p>
+              Od prvog pitanja do izbora vozila, tu smo da vam olakšamo proces.
+            </p>
+          </article>
+        </section>
+        <!-- Kontakt -->
+        <section class="kontakt" id="kontakt">
+          <div class="kontakt-inner">
+            <p class="eyebrow">VAŠE NOVO POGLAVLJE POČINJE OVDJE</p>
+            <h2>
+              Pronađimo automobil koji <span class="italik">vam odgovara.</span>
+            </h2>
+            <p class="kontakt-opis">
+              Javite nam se i recite nam šta tražite. Zajedno ćemo pronaći pravo
+              vozilo za vas.
+            </p>
+            <div class="kontakt-actions">
+              <!-- Zamijeni broj stvarnim brojem telefona -->
+              <a href="tel:+38700000000" class="kontakt-button">
+                KONTAKTIRAJTE NAS <span>↗</span>
+              </a>
+              <a href="#vozila" class="kontakt-secondary">
+                Pregledajte vozila
+              </a>
+            </div>
+          </div>
+          <div class="kontakt-decoration">L</div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <section class="dno">
+        <div class="footer-brand">
+          <a href="#pocetna" class="brand footer-logo">
+            <div class="logo">L</div>
+            <div class="naslov">
+              <p class="name">LUXCAR</p>
+              <p class="podnaslov">PREMIUM AUTOMOBILI</p>
+            </div>
+          </a>
+          <p class="paragraf-bottom">
+            Pažljivo odabrana vozila za one koji traže kvalitet, pouzdanost i
+            posebno iskustvo kupovine.
+          </p>
+        </div>
+        <div class="kontakti">
+          <p class="footer-heading">NAVIGACIJA</p>
+          <a href="#pocetna">Početna</a> <a href="#vozila">Naša vozila</a>
+          <a href="#prednosti">O nama</a> <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="kontakti">
+          <p class="footer-heading">KONTAKT</p>
+          <a href="tel:+38700000000">+387 00 000 000</a>
+          <a href="mailto:info@luxcar.ba">info@luxcar.ba</a>
+          <p class="footer-address">Bosna i Hercegovina</p>
+        </div>
+        <div class="vrijemeHolder">
+          <h4>RADNO VRIJEME</h4>
+          <p>Ponedjeljak – Petak</p>
+          <p>09:00 – 17:00</p>
+          <p>Subota</p>
+          <p>09:00 – 14:00</p>
+        </div>
+      </section>
+      <footer>
+        <p>© 2026 LUXCAR. Sva prava zadržana.</p>
+        <a href="#pocetna">NA VRH ↑</a>
+      </footer>
+      <script src="./js/cars.js"></script>
+      <script src="./js/index.js"></script>
+    </body>
+  </html>
+</html>

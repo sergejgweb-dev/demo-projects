@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Peugeot 2008 | LUXCAR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Pogledajte detalje, fotografije, cijenu i specifikacije automobila u LUXCAR salonu u Gradišci."
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="LUXCAR" />
+    <meta name="theme-color" content="#121312" />
+
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/detalji.css" />
+  </head>
+
+  <body>
+    <!-- Informacije na vrhu -->
+    <section class="sekcija1">
+      <div class="sekcija1-sadrzaj">
+        <div class="info-lokacija">
+          <span>⌖</span>
+          <p>Gradiška, Bosna i Hercegovina</p>
+        </div>
+
+        <div class="info-radno-vrijeme">
+          <span>◷</span>
+          <p>Pon – Pet: 09:00 – 18:00</p>
+        </div>
+
+        <div class="info-telefon">
+          <span>☎</span>
+          <a href="tel:+387XXXXXXXXX">Pozovite nas</a>
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <a href="index.html" class="logo"> LUX<span>CAR</span> </a>
+
+      <nav class="navigacija">
+        <a href="./index.html">Početna</a>
+        <a href="./index.html#vozila">Vozila</a>
+        <a href="./index.html#prednosti">O nama</a>
+        <a href="./index.html#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main class="detalji-main">
+      <a href="./index.html#vozila" class="nazad-link"> ← Nazad na vozila </a>
+
+      <section class="zaglavlje-vozila">
+        <p class="kategorija"></p>
+
+        <h1></h1>
+
+        <p class="podnaslov-vozila"></p>
+      </section>
+
+      <section class="detalji-vozila">
+        <div class="galerija">
+          <div class="glavna-slika">
+            <img src="" alt="" />
+
+            <button
+              class="strelica strelica-lijevo"
+              id="prethodnaSlika"
+              type="button"
+              aria-label="Prikaži prethodnu fotografiju"
+            >
+              &#10094;
+            </button>
+
+            <button
+              class="strelica strelica-desno"
+              id="sljedecaSlika"
+              type="button"
+              aria-label="Prikaži sljedeću fotografiju"
+            >
+              &#10095;
+            </button>
+          </div>
+
+          <div class="ostale-slike"></div>
+        </div>
+      </section>
+
+      <section class="cijena-i-specifikacije">
+        <div class="cijena-vozila">
+          <div>
+            <span>CIJENA VOZILA</span>
+            <p class="cijena"></p>
+          </div>
+
+          <span class="dostupnost">
+            <span class="status-tacka"></span>
+            Dostupno
+          </span>
+        </div>
+
+        <div class="naslov-specifikacija">
+          <h2>Osnovne informacije</h2>
+          <p>Najvažnije karakteristike vozila</p>
+        </div>
+
+        <div class="osnovne-specifikacije"></div>
+
+        <button class="kontakt-dugme">Kontaktirajte nas</button>
+      </section>
+
+      <section class="tehnicki-podaci">
+        <h2>Tehnički podaci</h2>
+        <div class="podaci-grid"></div>
+      </section>
+
+      <section class="oprema">
+        <h2>Oprema i sigurnost</h2>
+
+        <div class="oprema-sadrzaj" id="opremaSadrzaj">
+          <div class="oprema-grid"></div>
+        </div>
+
+        <button
+          class="oprema-toggle"
+          id="prikaziOpremu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="opremaSadrzaj"
+        >
+          Prikaži svu opremu
+          <span>↓</span>
+        </button>
+      </section>
+
+      <section class="kontakt-vozila">
+        <div class="kontakt-tekst">
+          <span>IMATE PITANJA?</span>
+          <h2>Da li je ovo vaš sljedeći automobil?</h2>
+          <p>
+            Kontaktirajte nas za više informacija, dodatne fotografije ili
+            dogovor oko pregleda vozila.
+          </p>
+        </div>
+
+        <div class="kontakt-dugmad">
+          <a href="#" class="kontakt-poziv" id="pozoviSalon">
+            ☎ Pozovite nas
+          </a>
+
+          <a
+            href="#"
+            class="kontakt-whatsapp"
+            id="whatsappSalon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp →
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-sadrzaj">
+        <div class="footer-logo">
+          <a href="index.html">LUX<span>CAR</span></a>
+          <p>Premium automobili</p>
+        </div>
+
+        <div class="footer-linkovi">
+          <a href="index.html">Početna</a>
+          <a href="./index.html#vozila">Vozila</a>
+          <a href="./index.html#prednosti">O nama</a>
+          <a href="./index.html#kontakt">Kontakt</a>
+        </div>
+
+        <div class="footer-kontakt">
+          <p>Gradiška, BiH</p>
+          <p>Pon – Pet: 09:00 – 18:00</p>
+        </div>
+      </div>
+
+      <div class="footer-dno">
+        <p>© 2026 LUXCAR. Sva prava zadržana.</p>
+      </div>
+    </footer>
+    <script src="./js/cars.js"></script>
+    <script src="./js/detalji.js"></script>
+  </body>
+</html>
