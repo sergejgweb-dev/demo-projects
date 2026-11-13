@@ -1,0 +1,2 @@
+const menu=document.querySelector('.menu');const nav=document.querySelector('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));document.querySelector('.form-button').addEventListener('click',()=>alert('Hvala! Ovo je demo forma - u stvarnoj verziji upit moze ici direktno na e-mail ili WhatsApp salona.'));
+
